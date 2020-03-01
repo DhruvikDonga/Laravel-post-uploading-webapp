@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draw</title>
+	<script type="text/javascript">
+
+	function triangle() {
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(10,10);
+			ctx.lineTo(400,400);
+			ctx.moveTo(400,400);
+			ctx.lineTo(100,10);
+			ctx.moveTo(100,10);
+			ctx.lineTo(200,200);
+			ctx.stroke();
+		}
+	function triangle1(){
+		var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(200,200);
+			ctx.lineTo(400,400);
+			ctx.moveTo(400,400);
+			ctx.lineTo(400,0);
+			ctx.moveTo(400,0);
+			ctx.lineTo(200,200);
+			ctx.stroke();
+	}
+	</script>
+</head>
+<body>
+	<h1>triangle pannel</h1>
+
+	<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
+	</canvas>
+	<br>
+	<button onclick="triangle()">click triangle</button>
+	<button onclick="triangle1()">click triangle2</button>
+
+</body>
+</html>
